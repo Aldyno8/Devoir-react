@@ -1,0 +1,93 @@
+/* Style général */
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f5f7fa;
+	margin: 0;
+	padding: 20px;
+  }
+  
+  /* Conteneur principal */
+  .task-manager {
+	max-width: 400px;
+	margin: 0 auto;
+	background-color: #bdb1b1fb;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titre principal */
+  .task-manager__title {
+	text-align: center;
+	font-size: 28px;
+	color: #333;
+	margin-bottom: 20px;
+  }
+  
+  /* Formulaire d'ajout de tâche */
+  .task-manager__form {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+  }
+  
+  .task-manager__input {
+	flex: 1;
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+  }
+  
+  .task-manager__button {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	font-size: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .task-manager__button:hover {
+	background-color: #45a049;
+  }
+  
+  /* Liste des tâches */
+  .task-manager__list {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .task-manager__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eef2f7;
+	padding: 12px 16px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+  }
+  
+  /* Titre d'une tâche */
+  .task-manager__task-name {
+	font-size: 18px;
+	color: #555;
+  }
+  
+  /* Bouton de suppression */
+  .task-manager__delete-button {
+	background-color: #e74c3c;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .task-manager__delete-button:hover {
+	background-color: #c0392b;
+  }
+  

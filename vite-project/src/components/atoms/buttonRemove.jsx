@@ -1,7 +1,7 @@
+import '../../styles/style.css'
+
 export const ButtonRemove = ({ task, onRemove }) => {
 	return (
-		<div>
-			<button onClick={() => onRemove(task)}>X</button>
-		</div>
+		<button onClick={() => onRemove(task)} className="task-manager__delete-button">X</button>
 	)
 }

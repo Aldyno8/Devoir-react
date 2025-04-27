@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { TaskList } from "../molecules/task"
 import { InputTask } from '../atoms/inputTask'
+import '../../styles/style.css'
 
 export const IndexLayout = () => {
 	const [tasks, setTasks] = useState([]);
@@ -26,15 +27,17 @@ export const IndexLayout = () => {
 
 	if (tasks.length > 0) {
 		return (
-			<div>
-				<InputTask onAddTask={addTask} />
-				<TaskList tasks={tasks} onRemove={removeTask} />
+			<div className='task-manager'>
+				<p className='task-manager__title'>.TODO_LIST</p>
+				<InputTask onAddTask={addTask}  className=""/>
+				<TaskList tasks={tasks} onRemove={removeTask}/>
 			</div>
 		)
 	}
 	else {
 		return (
-			<div>
+			<div className='task-manager'>
+				<p className='task-manager__title'>.TODO_LIST</p>
 				<InputTask onAddTask={addTask} />
 				"Aucune tâche"
 			</div>

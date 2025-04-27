@@ -16,9 +16,9 @@ export const InputTask = ({ onAddTask }) => {
 	}
 
 	return (
-		<div>
-			<input type="text" placeholder="New task ..." value={task} onChange={handleChange} />
-			<button onClick={handleSubmit} type='submit'>Add</button>
-		</div>
+		<form className='task-manager__form'>
+			<input type="text" placeholder="New task ..." value={task} onChange={handleChange} className='task-manager__input'/>
+			<button onClick={handleSubmit} type='submit' className='task-manager__button'>Add</button>
+		</form>
 	)
 }
